@@ -91,14 +91,22 @@ function extractFrom(cart){
  * @return: dimWeights array
  */
 function calcDimWeights(cart){
+   let weight = 0;
+   let volume = 0;
+   let dimWeight = 0;
     let dimWeights = [];
     for(let i = 0; i < cart.length; i++){
-        let i = cart[i];
-        let valume = item.length;
-
+         volume = prompt("what is the volume of " + cart[i][0]);
+    dimWeight = volume/139;
+         weight = prompt("what is the weight of " + cart[i][0]);
+         if (dimWeight > weight){
+            dimWeights.push(dimWeight);
+         }
+         else{
+            
+         }
     }
     return dimWeights;
-    
 }
 
 /* calcShipping(cart, dimWeights): Go through each item in the cart and calculate shipping from dimWeights. Total that up.  
@@ -109,6 +117,7 @@ function calcDimWeights(cart){
  */
 function calcShipping(dimWeights) {
     let totalShipping = 0;
+    let cart = []
     return totalShipping;
 }
 
