@@ -92,7 +92,13 @@ function extractFrom(cart){
  */
 function calcDimWeights(cart){
     let dimWeights = [];
+    for(let i = 0; i < cart.length; i++){
+        let i = cart[i];
+        let valume = item.length;
+
+    }
     return dimWeights;
+    
 }
 
 /* calcShipping(cart, dimWeights): Go through each item in the cart and calculate shipping from dimWeights. Total that up.  
